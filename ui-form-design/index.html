@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="registration-row row">
+            <div class="col-md-3 vertical-bar">
+                <div class="logo-sec">
+                    <div class="logo-side">
+                        <i class="fa-brands fa-react"></i>
+                        <span class="name">argon</span>
+                    </div>
+                    <a href="" class="menu-bar">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+                <div class="menu">
+                    <div class="menu-dropdown">
+                        <div class="menu-top" id="menu-top" onclick="myFunc()">
+                            <a href="" class="dashboard"><i class="fa fa-home"></i><span>Dashboard</span></a>
+                            <p class="right-arrow"><i class="fa-solid fa-chevron-right"></i></p>
+                        </div>
+                        <div class="drop-menu" id="menu-1">
+                            <a href="">Home</a>
+                            <a href="">Service</a>
+                            <a href="">About</a>
+                        </div>
+                    </div>
+                    <div class="menu-dropdown">
+                        <div class="menu-top" onclick="myFunc()">
+                            <a href="" class="usermenu"><i class="fa fa-user"></i><span>UserMenu</span></a>
+                            <p class="right-arrow"><i class="fa-solid fa-chevron-right"></i></p>
+                        </div>
+                        <div class="drop-menu">
+                            <a href="">User</a>
+                            <a href="">Name</a>
+                            <a href="">Address</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- registration  -->
+            <div class="registration-form col-md-9">
+                <header class="navbar">
+                    <div class="search">
+                        <input type="search" placeholder="Search">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="profile">
+                        <a href="" class="bell"><i class="fa-solid fa-bell"></i></a>
+                        <a href="" class="minimize"><i class="fa-solid fa-minimize"></i></a>
+                        <div class="profile-icon">
+                            <img src="./assets/image/person.png" alt="argon image">
+                            <span>John</span>
+                        </div>
+                    </div>
+                </header>
+                <div class="login-content">
+                    <div class="register-top">
+                        <div class="register-left">
+                            <h2>Registration Form</h2>
+                            <i class="fa fa-home"></i>
+                            <p>Users</p>
+                            <p>registration Form</p>
+                        </div>
+                        <div class="register-right">
+                            <a href="" class="left">New</a>
+                            <a href="">Filters</a>
+                        </div>
+                    </div>
+                    <div class="content-form">
+                        <h2 class="form-name">
+                            Registration Form
+                        </h2>
+                        <form action="" name="myform">
+                            <div class="form-row row">
+                                <div class="col-md-4 form-col">
+                                    <label for="fname">First name</label>
+                                    <input type="text" id="fname" placeholder="Mark">
+                                </div>
+                                <div class="col-md-4 form-col">
+                                    <label for="lname">Last name</label>
+                                    <input type="text" id="lname" placeholder="Otto">
+                                </div>
+                                <div class="col-md-4 form-col">
+                                    <label for="username">Username</label>
+                                    <input type="text" id="username" placeholder="Username">
+                                </div>
+                            </div>
+                            <div class="form-row row">
+                                <div class="col-md-6 form-col">
+                                    <label for="City">City</label>
+                                    <input type="text" id="City" placeholder="City">
+                                </div>
+                                <div class="col-md-3 form-col">
+                                    <label for="State">State</label>
+                                    <input type="text" id="State" placeholder="State">
+                                </div>
+                                <div class="col-md-3 form-col">
+                                    <label for="Zip">Zip</label>
+                                    <input type="text" id="Zip" placeholder="Zip">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <input type="checkbox">
+                                <p>Agree to terms and condition</p>
+                            </div>
+                            <a href="" class="submit">Submit</a>
+                        </form>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer-align">
+                        <div class="footer-left">
+                            <a href="">&#169;copy</a>
+                            <a href="" class="author"> Creative Tim</a>
+                        </div>
+                        <div class="footer-right">
+                            <a href="" class="link-align"> Creative Tim</a>
+                            <a href="" class="link-align">About Us</a>
+                            <a href="" class="link-align">Blog</a>
+                            <a href="">License</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+//  $(".menu-top").on("click",function(){
+// $(".drop-menu").css("display","block")
+// });
+
+$(document).ready(function(){
+  $(".menu-top").click(function(){
+    $(this).siblings(".drop-menu").toggleClass("main");
+  });
+});
+</script>
+</body>
+</html>
